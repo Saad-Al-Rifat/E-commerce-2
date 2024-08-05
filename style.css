@@ -121,6 +121,9 @@ header .hero-description p{
     justify-content: space-between;
 }
 @media screen and (max-width: 576px){
+    *{
+        overflow-x: hidden;
+    }
     .primary-btn{
         font-size: 0.7rem;
         display: flex;
@@ -142,6 +145,7 @@ header .hero-description p{
         background-color: var(--header);
         padding: 0;
         margin: 0;
+        overflow-x: hidden;
     }
     header .hero-description{
         width: 17rem;
@@ -177,6 +181,64 @@ header .hero-description p{
         width: 19rem;
         padding: 0;
         margin: 0; 
+        overflow-x: hidden;
     }
-
+    /* woman jacket section */
+    .woman-jackets .img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        justify-content: space-around;
+        row-gap: 3rem;
+        overflow-x: hidden;
+    }
+    .woman-jackets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .woman-jackets h2{
+        font-size: 3rem;
+        color: #363958;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    .woman-jackets .img-container > div{
+        width: 19rem;
+        overflow-x: hidden;
+    }
+    .woman-jackets img{
+        height: auto;
+        width: 19rem;
+        background: var(--whitesmok);
+        box-shadow: 0px 4px 6px rgb(214, 210, 210);
+        padding: 1.8rem;
+        border-radius: 24px;
+        margin-bottom: 1rem;
+        /* overflow-x: hidden; */
+    }
+    .woman-jackets .product-name{
+        font-size: 1.5rem;
+        color: var(--black);
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+    }
+    .woman-jackets .product-description{
+        font-size: 0.9rem;
+        color: var(--black);
+        font-weight: 400;
+        margin-bottom: 0.9rem;
+    }
+    .woman-jackets .product-price{
+        font-size: 2rem;
+        color: var(--orange1);
+        font-weight: 500;
+    }
+    .woman-jackets .img-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
 }
