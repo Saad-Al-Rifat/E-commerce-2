@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --orange1: #FB923c;
+    --header: #fffbf0;
+    --whitesmok: #f1f1f1F1;
+    --green: rgb(90, 214, 90);
+    --black: #000;
+    --white: #FFF;
+}
+.primary-btn{
+     font-size: 1.1rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 0.5rem;
+     width:  10rem;
+     height: 3.5rem;
+     color: var(--white); 
+     border-radius: 10px;
+     background-color: var(--green);
+     border: none;
+     cursor: pointer;
+}
+.primary-btn:hover{
+    background-color: rgb(104, 235, 104);
+}
+.primary-btn:active{
+    background-color: var(--green);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--header);
+    padding: 4rem;
+}
+header .hero-description{
+    width: 33rem;
+}
+header .hero-description h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 0.7rem;
+}
+header .hero-description span{
+    color: var(--orange1);
+}
+header .hero-description p{
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.shopping-icon{
+    height: 1.2rem;
+    fill: var(--white);
+}
+/* Body section starts here */
+/* womens jackets */
+.woman-jackets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.woman-jackets h2{
+    font-size: 3rem;
+    color: #363958;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.woman-jackets .img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: space-around;
+    column-gap: 10rem;
+}
+.woman-jackets .img-container > div{
+    width: 20rem;
+}
+.woman-jackets img{
+    height: auto;
+    width: 20rem;
+    background: var(--whitesmok);
+    box-shadow: 0px 4px 6px rgb(214, 210, 210);
+    padding: 1.8rem;
+    border-radius: 24px;
+    margin-bottom: 1rem;
+}
+.woman-jackets .product-name{
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+.woman-jackets .product-description{
+    font-size: 0.9rem;
+    color: var(--black);
+    font-weight: 400;
+    margin-bottom: 0.9rem;
+}
+.woman-jackets .product-price{
+    font-size: 2rem;
+    color: var(--orange1);
+    font-weight: 500;
+}
+.woman-jackets .img-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 576px){
+    .primary-btn{
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+        width:  6rem;
+        height: 1.8rem;
+        color: var(--white); 
+        border-radius: 10px;
+        background-color: var(--green);
+        border: none;
+   }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--header);
+        padding: 0;
+        margin: 0;
+    }
+    header .hero-description{
+        width: 17rem;
+        align-self: flex-start;
+        padding-left: 2rem;
+        /* padding: 2rem; */
+    }
+    header .hero-description h1{
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: var(--black);
+        margin-bottom: 0.4rem;
+    }
+    header .hero-description span{
+        color: var(--orange1);
+    }
+    header .hero-description p{
+        font-size: 0.8rem;
+        color: var(--black);
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    .shopping-icon{
+        height: 0.7rem;
+        fill: var(--white);
+    }
+    .hero-model{
+        padding: 0;
+        margin: 0;
+    }
+    header img{
+        height: 100%;
+        width: 19rem;
+        padding: 0;
+        margin: 0; 
+    }
+
+}
